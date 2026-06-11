@@ -3,13 +3,12 @@
 // a resposta for "sim".
 
 
-const prompt = require('prompt-sync')()
-let mult = Number(prompt("digite a tabuada que desaja: "))
-for (let i = 1; i <= 10; i++){
+// const prompt = require('prompt-sync')()
+// let mult = Number(prompt("digite a tabuada que desaja: "))
+// for (let i = 1; i <= 10; i++){
 
-    console.log(`${mult} x ${i} = ${mult * i}`)
-}
-
+//     console.log(`${mult} x ${i} = ${mult * i}`)
+// }
 
 
 
@@ -17,6 +16,20 @@ for (let i = 1; i <= 10; i++){
 // 2. Leia um número inteiro positivo e, usando um laço while, calcule e exiba quantos
 // dígitos ele possui. Trate o caso do número zero (que possui 1 dígito).
 
+// const prompt = require('prompt-sync')()
+// let contador = Number(prompt("digite um numero: "))
+// let resultado = 0
+// if(contador === 0){
+//     console.log("seu numero possui 1 digito" )
+// }else{
+//     while(contador > 0){
+//          resultado++
+//          contador = Math.floor(contador / 10)
+         
+//     }
+//     console.log(`o seu numero possui ${resultado} digitos!`)
+        
+// }
 
 
 
