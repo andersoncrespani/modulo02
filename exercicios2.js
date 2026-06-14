@@ -37,14 +37,35 @@
 // 3. Peça ao usuário quantos termos da sequência de Fibonacci deseja ver e exiba-os
 // usando um laço for. Exemplo: 1, 1, 2, 3, 5, 8, 13...
 
+// const prompt = require('prompt-sync')()
+// let  num = prompt("quais numeros vc quer ver? ")
 
+// let numero1 = 0
+// let numero2 = 1
 
-
+// for(let i = 1; i <= num; i++){
+//     let atual = numero2 + numero1
+//     console.log(atual)
+//     numero1 = numero2
+//     numero2 = atual
+// }
 
 
 // 4. Defina uma senha fixa no código. Peça ao usuário que a digite e, usando um laço
 // do...while, permita no máximo 3 tentativas. Exiba se ele acertou ou se esgotou as
 // tentativas.
+
+const prompt = require('prompt-sync')()
+let  senha = prompt("digite a sua senha:  ")
+let senhocorreta = "andersoncrespani"
+let tentativas = 0
+while(senha !== senhacorreta && tentativas < 3)
+if(senha === senhacorreta){
+    console.log("acesso liberado")
+}else{
+    console.log("acesso bloqueado exedencia de tentativas")
+}
+
 
 
 
