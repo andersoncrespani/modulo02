@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid gray; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background-color: rgb(249, 247, 247);
+    /* border: 1px solid gray; */
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "principal menu-lateral"
+    "rodape rodape";
+    gap: 20px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho {grid-area: cabecalho;}
+.principal {grid-area: principal;}
+.menu-lateral {grid-area: menu-lateral}
+.rodape {grid-area: rodape;}
+
+.cabecalho {
+    display: flex;
+    border-bottom: 4px solid rgb(54, 53, 53);
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+
+}
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+.navegacao {
+    display: flex;
+    gap: 22px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.navegacao a:hover {
+    color: rgb(68, 201, 86); 
+}
+.destaque{
+    background-color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.destaque h1 {
+    font-size: 30px;
+    margin: 10px 0;
+
+}
+
+.resumo {
+    color: #555;
+    font-size: 17px;
+
+}
+.categoria {
+    display: inline-block;
+    background-color: green;
+    font-family: arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #888;
+    
+}
+
+.grade-noticias {
+    display: grid;
+    grid-template-columns:
+    repeat(autofit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+.cartao{
+    background-color: #fff;
+    padding: 18px;
+
+}
+
+.cartao h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.cartao p {
+    font-size: 15px;
+    color: #555;
+}
+
+.menu-lateral {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.menu-lateral h3{
+    border-bottom: 2px solid green;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.menu-lateral ol {
+    padding-left: 20px;
+}
+
+.menu-lateral li {
+    margin-bottom: 12px;
+    font-size: 20px;
+
+}
+
+.rodape {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    border: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "cabecalho"
+        "principal"
+        "menu-lateral"
+        "rodape"
+    }
+}
+
+.cabecalho {
+    flex-direction: column;
+    gap: 12px
+}
